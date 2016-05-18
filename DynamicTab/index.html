@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XYZ SmartHome Automation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-toggle.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="scripts/jquery-2.2.3.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="script.js"></script>
+    <script src="scripts/bootstrap-toggle.js"></script>
+
+</head>
+<body>
+
+    <div class="top-nav">
+        <p class="alignleft">The time at the Hobbs residence is: 15th May.</p>
+        <p class="alignright">
+            Hello, Kathleen! <a href="#">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+        </p>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <header>
+        <img src="loco.png" />
+    </header>
+
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+
+            <li><a data-toggle="tab" href="#">Dashboard</a></li>
+
+            <li class="dropdown active"><a data-toggle="tab" href="#floor-1">My House</a></li>
+
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Global Options
+                <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a data-toggle='tab' href="#submenu1">Security</a></li>
+                    <li><a data-toggle='tab' href="#submenu1">Lighting</a></li>
+                    <li><a data-toggle='tab' href="#submenu1">Heating</a></li>
+                </ul>
+            </li>
+
+            <li><a data-toggle="tab" href="#menu2">Account Settings</a></li>
+        </ul>
+
+
+        <div class="tab-border">
+            <div class="tab-content">
+
+                <div id="floor-1" class="tab-pane fade in active" style="text-align: center">
+
+                    <div class="center-pills">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">Floor 1</a></li>
+                            <li><a href="#">Floor 2</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="room-controls">
+                        <a href="#">
+                            <img src="icons/Lighting2.png" title="Set the lighting for this floor" alt="Lighting Options" /></a>
+                        <a href="#">
+                            <img src="icons/WindowLock2.png" title="Set the window locks for this floor" alt="Window Locks" /></a>
+                        <a href="#">
+                            <img src="icons/DoorLock2.png" title="Set the door locks for this floor" alt="Door Locks" /></a>
+                    </div>
+
+                    <svg id="svg-floor" align="center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585.67 314">
+                        <rect class="cls-1" x="82.83" y="163.5" width="205.67" height="148" />
+                        <rect class="cls-1" x="288.5" y="185.5" width="150" height="126" />
+                        <rect class="cls-1" x="352.5" y="4.5" width="230.67" height="181" />
+                        <rect class="cls-1" x="292.5" y="114" width="57.33" height="71.5" />
+                        <rect class="cls-1" x="290.5" y="4.5" width="62" height="103.83" />
+                        <a data-toggle="tab" href="#kitchen" style="text-decoration: none">
+                            <rect id="kitchen-rect" class="cls-1" x="154.17" y="4.5" width="136.33" height="159" />
+                            <text class="room-labels" x="189" y="95">Kitchen</text>
+                        </a>
+                        <rect class="cls-1" x="4.5" y="5" width="145.33" height="158.5" />
+                        <line class="cls-2" x1="2.5" y1="2.5" x2="583.17" y2="2.5" />
+                        <line class="cls-2" x1="2.5" y1="163.5" x2="2.5" y2="2.5" />
+                        <line class="cls-2" x1="93.17" y1="163.5" x2="72.5" y2="163.5" />
+                        <line class="cls-2" x1="16.5" y1="163.5" x2="2.5" y2="163.5" />
+                        <line class="cls-2" x1="245.17" y1="163.5" x2="288.5" y2="163.5" />
+                        <line class="cls-2" x1="290.5" y1="54.17" x2="290.5" y2="2.5" />
+                        <line class="cls-2" x1="583.17" y1="2.5" x2="583.17" y2="41.83" />
+                        <line class="cls-2" x1="352.5" y1="53.5" x2="352.5" y2="4.5" />
+                        <line class="cls-2" x1="290.5" y1="111.5" x2="352.5" y2="111.5" />
+                        <line class="cls-2" x1="290.5" y1="75.5" x2="290.5" y2="185.5" />
+                        <line class="cls-2" x1="352.5" y1="75.5" x2="352.5" y2="185.5" />
+                        <line class="cls-2" x1="583.17" y1="185.5" x2="401.17" y2="185.5" />
+                        <line class="cls-2" x1="583.17" y1="145.5" x2="583.17" y2="185.5" />
+                        <line class="cls-2" x1="290.5" y1="185.5" x2="314.5" y2="185.5" />
+                        <line class="cls-2" x1="347.83" y1="185.5" x2="364.5" y2="185.5" />
+                        <line class="cls-2" x1="391.83" y1="185.5" x2="405.17" y2="185.5" />
+                        <line class="cls-2" x1="82.83" y1="163.5" x2="82.83" y2="311.5" />
+                        <line class="cls-2" x1="438.5" y1="185.5" x2="438.5" y2="200.17" />
+                        <line class="cls-2" x1="438.5" y1="246.83" x2="438.5" y2="311.5" />
+                        <path class="cls-2" d="M755.67,834.5" transform="translate(-317.17 -523)" />
+                        <line class="cls-2" x1="82.83" y1="311.5" x2="438.5" y2="311.5" />
+                        <line class="cls-2" x1="151.5" y1="2.5" x2="151.5" y2="163.5" />
+                        <line class="cls-2" x1="288.5" y1="237.67" x2="288.5" y2="311.5" />
+                    </svg>
+
+
+                </div>
+
+                <div id="kitchen" class="tab-pane fade" style="text-align: center;">
+
+                    <div class="center-pills">
+                        <ul class="nav nav-pills">
+                            <li><a href="#">Bathroom</a></li>
+                            <li class="active"><a href="#">Kitchen</a></li>
+                            <li><a href="#">Dining Room</a></li>
+                            <li><a href="#">Foyer</a></li>
+                            <li><a href="#">Garage</a></li>
+                            <li><a href="#">Laundry</a></li>
+                            <li><a href="#">Living Room</a></li>
+                        </ul>
+                    </div>
+                    <br />
+
+                    <a data-toggle="tab" href="#floor-1">Return to Floor 1</a>
+                    <br />
+
+                    <div class="room-controls">
+                        <a href="#">
+                            <img src="icons/Lighting2.png" title="Set the lighting for this room" alt="Lighting Options" /></a>
+                        <a href="#">
+                            <img src="icons/WindowLock2.png" title="Set the window locks for this room" alt="Window Locks" /></a>
+                        <a href="#">
+                            <img src="icons/DoorLock2.png" title="Set the door locks for this room" alt="Door Locks" /></a>
+                        <!--       <a href="#">
+                            <img src="icons/Coffee.png" title="Coffee options" alt="Coffee" /></a>
+                        <a href="#">
+                            <img src="icons/Dishwasher.png" title="Dishwasher options" alt="Dishwaser" /></a>
+                        <a href="#">
+                            <img src="icons/Fridge.png" title="Fridge options" alt="Fridge" /></a>
+                        <a href="#">
+                            <img src="icons/Oven.png" title="Oven options" alt="Oven" /></a>-->
+                    </div>
+
+                    <div>
+                        <svg id="svg-kitchen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.17 323">
+                            <rect class="cls-3" x="220.83" y="226" width="53.67" height="81.65" />
+                            <rect class="cls-3" x="147.18" y="2" width="81.65" height="53.67" />
+                            <filter id="Fitted" primitiveUnits="objectBoundingBox">
+                                <feImage xlink:href="icons/Lighting2.png"
+                                    x="39.83" y="0" width="53.67" height="10%"
+                                    preserveAspectRatio="none" />
+                            </filter>
+                            <rect class="cls-3" x="39.83" y="2" width="53.67" height="53.67" filter="url (#Fitted)" />
+                            <rect class="cls-3" x="93.51" y="2" width="53.67" height="53.67" />
+                            <path class="cls-4" d="M938.66,439.5" transform="translate(-664 -118)" />
+                            <rect class="cls-3" x="220.83" y="144.35" width="53.67" height="81.65" />
+                            <line class="cls-5" x1="274.5" y1="105.33" x2="274.5" y2="2" />
+                            <line class="cls-5" x1="274.67" y1="144" x2="274.67" y2="321.5" />
+                            <line class="cls-5" x1="188" y1="321.5" x2="274.67" y2="321.5" />
+                            <line class="cls-5" x1="1.5" y1="1.5" x2="274.33" y2="1.5" />
+                            <line class="cls-5" x1="1.5" y1="1.67" x2="1.5" y2="112" />
+                            <line class="cls-5" x1="1.5" y1="211.17" x2="1.5" y2="321.5" />
+                        </svg>
+
+
+                        <div class="appliances-list">
+
+                            <div class="appliance-controls">
+                                <img src="icons/Coffee.png" title="Coffee options" alt="Coffee" />
+                                <input data-toggle="toggle" type="checkbox">
+                            </div>
+
+                            <div class="appliance-controls">
+                                <img src="icons/Dishwasher.png" title="Dishwasher options" alt="Dishwasher Options" />
+                                <input data-toggle="toggle" type="checkbox">
+                            </div>
+
+                            <div class="appliance-controls">
+                                <img src="icons/Fridge.png" title="Fridge options" alt="Fridge options" />
+                                <input data-toggle="toggle" onclick="toggle_visibility('oven-options');" type="checkbox">
+                            </div>
+
+                            <div id="oven-options-box" class="appliance-controls">
+                                <img src="icons/Oven.png" />
+                                <input id="toggle-event" data-toggle="toggle" type="checkbox">
+
+                                <div class="appliance-state-info">
+                                </div>
+
+                                <div id="oven-options">
+                                    <hr />
+
+                                    Mode: 
+                            <select id="oven-mode">
+                                <option value="conventional">Conventional</option>
+                                <option value="fan-bake">Fan Bake</option>
+                                <option value="defrost">Defrost</option>
+                                <option value="top-only">Top Only</option>
+                                <option value="top-and-fan-bake">Top and Fan Bake</option>
+                            </select>
+                                    <hr />
+                                    <form id="oven-form">
+                                        Temperature: 
+                            <input id="temp-input" type="number" name="temperature" min="60" max="260" required>
+                                        °C
+                                    <hr />
+                                        Timer: 
+                             <input id="timer-input" type="number" name="timer-value" min="1" max="200" required>
+                                        min
+                                         <hr />
+
+                                        <!--      <button onclick="alertOvenOn()">Click Me!</button> -->
+                                        <input class="submit" type="submit" value="Confirm" />
+
+
+                                    </form>
+                                    <br />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <div id="submenu1" class="tab-pane fade">
+                    <h3>This is a submenu!</h3>
+                    <p>Testing 1..2...3</p>
+                </div>
+
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+
+            </div>
+        </div>
+    &nbsp &nbsp &nbsp
+</body>
+</html>
